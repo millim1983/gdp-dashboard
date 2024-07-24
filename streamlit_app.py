@@ -217,4 +217,3 @@ for i, country in enumerate(selected_countries):
             delta=growth,
             delta_color=delta_color
         )
-'''
