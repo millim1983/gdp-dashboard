@@ -87,8 +87,9 @@ df1 = df.select_dtypes([int, float])
 # Draw the actual page
 
 # Set the title that appears at the top of the page.
+st.header(':factory: 제조데이터 분석 프로젝트')
 '''
-#:factory: 제조데이터 분석 프로젝트
+
 
 빅데이터 분석의 첫걸음! 
 제조데이터 분석을 위한 데이터 시각화 표출 대시보드입니다. 
