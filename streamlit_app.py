@@ -60,7 +60,7 @@ def get_data():
     raw_df = raw_df.drop_duplicates()
 
     # 종속변수 추가 
-    raw_dff['work_start_dt_ns'] = pd.to_datetime(raw_df['WORK_START_DT'])
+    raw_df['work_start_dt_ns'] = pd.to_datetime(raw_df['WORK_START_DT'])
     raw_df['work_end_dt_ns'] = pd.to_datetime(raw_df['WORK_END_DT'])
 
     raw_df['diff'] = (raw_df['work_end_dt_ns'] - raw_df['work_start_dt_ns']).dt.total_seconds().div(60).astype(int)
