@@ -94,8 +94,8 @@ But it's otherwise a great (and did I mention _free_?) source of data.
 '''
 
 # Add some spacing
-''
-''
+'''
+
 
 # 그래프를 그리기 위해 int, float만 선택 
 df1 = df.select_dtypes([int, float])
@@ -226,3 +226,4 @@ for i, country in enumerate(selected_countries):
             delta=growth,
             delta_color=delta_color
         )
+'''
