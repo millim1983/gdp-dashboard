@@ -85,13 +85,14 @@ df = get_data()
 # Draw the actual page
 
 # Set the title that appears at the top of the page.
-'''
-# :earth_americas: GDP dashboard
 
-Browse GDP data from the [World Bank Open Data](https://data.worldbank.org/) website. As you'll
-notice, the data only goes to 2022 right now, and datapoints for certain years are often missing.
-But it's otherwise a great (and did I mention _free_?) source of data.
-'''
+:factory: 제조데이터 분석 프로젝트
+
+빅데이터 분석의 첫걸음! 
+제조데이터 분석을 위한 데이터 시각화 표출 대시보드입니다. 
+다양한 그래프들을 활용하여 데이터 특성을 시각적으로 나타냈습니다.
+변수들을 조정하며 데이터의 특성을 찾아봅시다. 
+
 
 # Add some spacing
 '''
