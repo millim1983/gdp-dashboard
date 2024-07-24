@@ -80,30 +80,30 @@ def get_data():
     return raw_df
 
 df = get_data()
+# 그래프를 그리기 위해 int, float만 선택 
+df1 = df.select_dtypes([int, float])
 
 # -----------------------------------------------------------------------------
 # Draw the actual page
 
 # Set the title that appears at the top of the page.
-
+'''
 #:factory: 제조데이터 분석 프로젝트
 
-빅데이터 분석의 첫걸음! 
+st.subheader('빅데이터 분석의 첫걸음! 
 제조데이터 분석을 위한 데이터 시각화 표출 대시보드입니다. 
 다양한 그래프들을 활용하여 데이터 특성을 시각적으로 나타냈습니다.
-변수들을 조정하며 데이터의 특성을 찾아봅시다. 
+변수들을 조정하며 데이터의 특성을 찾아봅시다. ')
 
-
-# Add some spacing
 '''
 
+# Add some spacing
+''
+''
 
-# 그래프를 그리기 위해 int, float만 선택 
-df1 = df.select_dtypes([int, float])
 
-# 데이터 describ을 표현하기 위한 섹션 
+# 데이터 describe을 표현하기 위한 섹션 
 cols = st.columns(4)    # 4열로보여주겠다 
-
 
 for i, d in enumerate(selected_countries):
     col = cols[i % len(cols)]
@@ -125,16 +125,6 @@ for i, d in enumerate(selected_countries):
             delta=growth,
             delta_color=delta_color
         )
-
-
-
-
-
-
-
-
-
-
 
 
 min_value = 10
